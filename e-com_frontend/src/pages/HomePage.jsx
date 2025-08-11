@@ -21,6 +21,7 @@ const HomePage = () => {
 
         fetchProducts();
     }, []);
+   
 
     return (
         <div>
