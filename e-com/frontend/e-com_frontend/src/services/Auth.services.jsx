@@ -13,9 +13,9 @@ const register = (name, email, password, role) => {
     });
 };
 
-const authService = {
+const AuthService = {
     register,
     // Hum yahan login function bhi baad mein add karenge
 };
 
-export default authService;
+export default AuthService;
