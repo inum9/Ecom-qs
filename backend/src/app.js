@@ -8,5 +8,7 @@ app.use(express.static("public"));
 app.use(cookieParser());
 // routes
 import {userRoutes} from "../src/routes/user.routes.js";
+import {productRoutes} from "./routes/product.routes.js";
 app.use("/api/v1/user",userRoutes);
+app.use("/api/v1/product",productRoutes);
 export {app};
