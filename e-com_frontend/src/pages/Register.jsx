@@ -1,7 +1,7 @@
 // src/pages/RegisterPage.jsx
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import AuthService from '../services/A;
+import AuthService from '../services/Auth.services'
 
 const RegisterPage = () => {
     const [name, setName] = useState('');
@@ -19,7 +19,7 @@ const RegisterPage = () => {
         setLoading(true);
 
         try {
-            const response = await authService.register(name, email, password, role);
+            const response = await AuthService.register(name, email, password, role);
             setMessage(response.data.message);
            
             navigate('/login');
