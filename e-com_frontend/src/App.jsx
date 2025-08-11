@@ -2,6 +2,9 @@
 
 import RegisterPage from './pages/Register';
 import React from 'react';
+import LoginPage from './pages/Login';
+import HomePage from './pages/HomePage';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 
