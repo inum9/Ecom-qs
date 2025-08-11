@@ -1,3 +1,2 @@
- const dbName="ecom";
-
- export {dbName};
+const dbNmae= "ecom";
+export {dbNmae};
