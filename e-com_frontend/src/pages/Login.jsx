@@ -11,7 +11,7 @@ const LoginPage = () => {
     const [message, setMessage] = useState('');
 
     const navigate = useNavigate();
-    const { login } = useAuth(); // AuthContext se login function lein
+    const { login } = useAuth(); //
 
     const handleLogin = async (e) => {
         e.preventDefault();
@@ -20,8 +20,8 @@ const LoginPage = () => {
 
         try {
             const data = await AuthService.login(email, password);
-            login(data.user, data.accessToken); // Context ko update karein
-            // Login hone ke baad, user ko home page par bhej dein
+            login(data.user, data.accessToken); // 
+            
             navigate('/');
         // eslint-disable-next-line no-unused-vars
         } catch (error) {
